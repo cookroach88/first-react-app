@@ -13,7 +13,7 @@ class MyButton extends React.Component{
 		 var click=this.props.click;
 		 return (
 			<div style={{marginTop:'10px'}}>
-				<button onClick={click}>{title}</button>
+				<button style={{backgroundColor:'#0074bc', color:'#ffffff'}} onClick={click}>{title}</button>
 					{isClicked&&<p>is clicked</p>}
 			</div>
 		);
