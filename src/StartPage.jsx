@@ -1,6 +1,7 @@
 import React from 'react';
+import './css/esastyle.css';
 /*
- *  ...
+ *  create StartPage-funtion
  */
 function StartPage() {
 	/*
@@ -8,7 +9,7 @@ function StartPage() {
 	 */
   return (
     <div>
-		<h1>Start</h1>
+		<b class='big'>Start</b>
 	</div>
   );
 }
