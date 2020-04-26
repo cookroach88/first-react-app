@@ -1,8 +1,9 @@
 import React from 'react';
-import logo from './img/esa_logo.jpg';
+import logo from './img/cookroach_neg.png';
 import './css/App.css';
 import MyButton from './components/MyButton';
-import StartPage from './StartPage';
+import StartPage from './js/StartPage';
+
 
  /*
   *  create App-class as mainpage 
@@ -18,20 +19,25 @@ class App extends React.Component {
 	 }
  /*
   *  render the html into class App
-  */	 
- render(){
+  */	
+render(){
   return (
   <div>
     <div className="App">
 	{!this.state.isClicked&&
       <header className="App-header">
+	    <p>Let's get started now !</p>
+		<p>&nbsp;</p>
+		<p>{new Date().toLocaleTimeString()}</p>
+		<p>&nbsp;</p>
         <img src={logo} className="App-logo" alt="logo" />
+		  <p>&nbsp;</p>
+		  <p>&nbsp;</p>
           <MyButton title={'Start'} isClicked={this.state.isClicked} click={this.click}/>
       </header>
 	}
 	  {this.state.isClicked&&<StartPage/>}
     </div>
-	
   </div>
   );
 }
@@ -39,8 +45,8 @@ class App extends React.Component {
 
 /* --------------------------------------------- 
          all this code is under CC-BY-4.0-Lizenz
-         author:        n.weber@esa-grimma.de
-         start on:      2020-04-25
+         author:        rogercov70@yahoo.de
+         start on:      2020-04-26
          enjoy and have fun forever
    --------------------------------------------- */
    

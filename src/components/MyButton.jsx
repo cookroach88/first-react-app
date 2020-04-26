@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from '../css/button.css';
 /*
  *  ...
  */
@@ -12,9 +13,8 @@ class MyButton extends React.Component{
 		 var isClicked=this.props.isClicked;
 		 var click=this.props.click;
 		 return (
-			<div style={{marginTop:'10px'}}>
-				<button style={{backgroundColor:'#0074bc', color:'#ffffff'}} onClick={click}>{title}</button>
-					{isClicked&&<p>is clicked</p>}
+			<div style={{marginTop:'20px'}}>
+				<button onClick={click}>{title}</button>
 			</div>
 		);
 		 
