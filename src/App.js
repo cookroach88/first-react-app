@@ -5,10 +5,10 @@ import MyButton from './components/MyButton';
 import StartPage from './js/StartPage';
 
 
- /*
+ /*  -----------------------------
   *  create App-class as mainpage 
-  *  as startpoint for application
-  */
+  *  to startpoint for application
+  --------------------------------*/
 class App extends React.Component {
 	/*
 	 *  define methods for the class
