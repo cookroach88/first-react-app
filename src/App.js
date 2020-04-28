@@ -53,7 +53,7 @@ render(){
 /* ---------------------------------------------
  * after your works please delete all comments 
  * here and write all this informations into a 
- * special documentation file => xxxxx.md
+ * special documentation file => comments.md
  * --------------------------------------------- */
 
 export default App;
