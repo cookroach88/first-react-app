@@ -10,13 +10,39 @@ import StartPage from './js/StartPage';
   *  to startpoint for application
   --------------------------------*/
 class App extends React.Component {
+	// source reference:
+	// https://de.reactjs.org/docs/state-and-lifecycle.html
+	// ...
+	// initialize this.state with date-object
+	constructor(props) {
+    super(props);
+    this.state = {date: new Date()};
+	}
+	// browser called after each '1s' the tick-method 
+	componentDidMount() {
+    this.timerID = setInterval(
+      () => this.tick(),
+      1000
+	);
+	}
+	// ...
+	componentWillUnmount() {
+		clearInterval(this.timerID);
+	}
 	/*
 	 *  define methods for the class
 	 */
+	// tick-method (called by browser after each '1s)
+	tick() {
+		this.setState({
+		date: new Date()
+		});
+	}
 	state={isClicked:false};
 	click = () => {
 		this.setState({isClicked:true}) 
 	 }
+	 
  /*
   *  render the html into class App
   */	
@@ -28,7 +54,7 @@ render(){
       <header className="App-header">
 	    <p>Let's get started now !</p>
 		<p>&nbsp;</p>
-		<p>{new Date().toLocaleTimeString()}</p>
+		<p>{this.state.date.toLocaleTimeString()}</p>
 		<p>&nbsp;</p>
         <img src={logo} className="App-logo" alt="logo" />
 		  <p>&nbsp;</p>
