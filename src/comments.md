@@ -51,13 +51,18 @@ extract some standard comments:
       To create a production bundle, use `npm run build` or `yarn build`.
 -->
 
+
+
 [next tasks]
-- make your first github-repository
-- make regular updates with commits
-    
+- make your first github-repository (ready)
+- make regular updates with commits (ready)
+- integrate TODO into project
+- creating some TODO's and work with this
+- TODO: ...
 
 next release coming soon ...
 [2020-04-28] - create this file and start
+[2020-05-02] - add TODO-list and time-function into App
 ***********************************************************
 date:	2020-04-28
 author:	cookroach88
